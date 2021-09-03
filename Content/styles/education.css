@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+.edu-article {
+    padding: 5rem 0;
+}
+
+/*============================================================
+교육목표 (0810 zoe 추가)
+============================================================*/
+.goal-hd {
+    text-align: center;
+}
+.goal-hd .ani-txt,
+.goal-hd .ani-txt__el {
+    -webkit-animation-delay: .25s;
+    animation-delay: .25s;
+}
+.goal-hd-txt {
+    padding-top: 1.5rem;
+    line-height: 1.4;
+}
+/* 기관별 교육목표 
+============================================================*/
+.goal-inst-article {
+    background: #fff url("../images/education/goal-bg-img.png") no-repeat center bottom;
+}
+.goal-inst-list {
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-top: 3px solid #760023;
+    box-shadow: 0 5px 0 #edeef0;
+}
+[class^="goal-inst-item__"] {
+    padding: 2.5rem 0;
+    width: 50%;
+    text-align: center;
+    -webkit-animation-delay: 0.35s !important;
+    animation-delay: 0.35s !important;
+}
+.goal-inst-item__lt {
+    padding-left: 3.5rem;
+    padding-right: 1rem;
+    background-color: #fff;
+}
+.goal-inst-item__rt {
+    padding-left: 1rem;
+    padding-right: 3.5rem;
+    background-color: #fcfcfd;
+}
+.goal-inst-hd {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
+.goal-inst-hd img {
+    max-width: inherit;
+    width: auto;
+    height: 4.5rem;
+}
+.goal-inst-cont strong {
+    display: block;
+    position: relative;
+    padding-top: 3rem;
+    line-height: 1.4;
+}
+.goal-inst-cont strong::before {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 1px;
+    height: 1.5rem;
+    background-color: #000;
+}
+/* 4가지 교육목표 
+============================================================*/
+.goal-psy-hd {
+    width: 18.5rem;
+}
+.goal-psy-cont {
+    width: calc(100% - 18.5rem);
+}
+.goal-psy-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.goal-psy-item + .goal-psy-item {
+    margin-top: 1rem;
+}
+.goal-psy-item dt {
+    padding: 2rem 0;
+    width: 9rem;
+    text-align: center;
+    border-left: 3px solid #760023;
+}
+.goal-psy-item:nth-child(odd) dt {
+    background-color: #dfe5ec;
+}
+.goal-psy-item:nth-child(even) dt {
+    background-color: #e7e0d8;
+}
+.goal-psy-item dd {
+    padding: 1.25rem 2rem;
+    width: calc(100% - 9rem);
+    background-color: #fff;
+}
+.goal-psy-item p + p {
+    padding-top: 5px;
+}
+/* 심리학부 교육목표 상세 소개
+============================================================*/
+.goal-detail-hd {
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+.goal-detail-cont {
+    animation-delay: 0.25s !important;
+}
+.goal-segment-box {
+    position: relative;
+    padding: 4rem 0;
+    border: 1px solid #dfe5ec;
+}
+.goal-segment-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f5f6f8;
+}
+.goal-segment-box > * {
+    position: relative;
+}
+.goal-module-list {
+    background: url("../images/education/goal-module-bg.png") no-repeat center bottom;
+    background-size: 100%;
+}
+.goal-module-item {
+    padding-bottom: 1.5rem;
+    width: 17.5%;
+    text-align: center;
+}
+.goal-module-item .ico {
+    display: inline-block;
+    width: 4.5rem;
+    border-radius: 100%;
+}
+.goal-module-item:nth-child(odd) .ico {
+    background-color: #dfe5ec;
+}
+.goal-module-item:nth-child(even) .ico {
+    background-color: #e7e0d8;
+}
+.goal-module-item strong {
+    display: block;
+    padding: 0.75rem 0 0.5rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    [class^="goal-inst-item__"] {
+        width: 100%;
+    }
+    .goal-inst-item__lt,
+    .goal-inst-item__rt {
+        padding: 3rem 2.5rem;
+    }
+    .goal-psy-hd {
+        padding-bottom: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+    .goal-psy-cont {
+        width: 100%;
+    }
+    .goal-segment-box {
+        padding: 0;
+        border: 0;
+    }
+    .goal-segment-box::before {
+        display: none;
+    }
+    .goal-module-list {
+        background: none;
+    }
+    .goal-module-item {
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+        width: 48%;
+        border: 2px solid #eaeaea;
+        border-radius: 2rem;
+    }
+}
+
+/*============================================================
+Career
+============================================================*/
+.career-hd {
+    text-align: center;
+}
+.career-hd .ani-txt,
+.career-hd .ani-txt__el {
+    -webkit-animation-delay: .25s;
+    animation-delay: .25s;
+}
+.career-hd-txt {
+    padding-top: 1rem;
+    color: #666;
+}
+.career-figure-item__lt {
+    width: 51.7%;
+}
+.career-figure-item__rt {
+    margin-left: 1rem;
+    width: 35.55%;
+}
+.career-interview-item {
+    position: relative;
+    padding: 4rem 0 2.5rem;
+    margin-top: 5rem;
+    margin-right: 2.6%;
+    width: 31.6%;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    border-top: 4px solid #760023;
+    box-shadow: 0 5px 0 #f7f7f7;
+}
+.career-interview-item:nth-child(3n),
+.career-interview-item:last-child {
+    margin-right: 0;
+}
+.career-interview-thumb {
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 6rem;
+    background: #eaeaea url('../images/education/career-interview-thumb-bg.png') no-repeat center;
+    background-size: 100%;
+    border-radius: 100%;
+    border-radius: 100%;
+}
+.career-interview-txt {
+    position: relative;
+    padding: 4rem 0 5.5rem;
+}
+.career-interview-txt::before,
+.career-interview-txt::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 3.25rem;
+    height: 2.6rem;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+.career-interview-txt::before {
+    top: 0;
+    background-image: url('../images/education/career-quote-top-ico.png');
+}
+.career-interview-txt::after {
+    bottom: 1.5rem;
+    background-image: url('../images/education/career-quote-btm-ico.png');
+}
+.career-interviewer {
+    display: block;
+    color: #98aeba;
+}
+
+@media screen and (max-width: 575.98px) {
+    .career-figure-item__lt {
+        width: 100%;
+    }
+    .career-figure-item__rt {
+        margin-top: 5rem;
+        margin-left: 0;
+        width: 100%;
+    }
+    .career-interview-item {
+        margin-right: 0;
+        margin-top: 7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+    }
+    .career-interview-thumb {
+        top: -4rem;
+        width: 8rem;
+        height: 8rem;
+    }
+    .career-interview-txt {
+        padding-top: 5.5rem;
+    }
+    .career-interview-txt::before {
+        top: 1.5rem;
+    }
+}

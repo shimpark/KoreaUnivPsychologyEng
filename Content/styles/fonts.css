@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* font family : Noto Sans Korean */
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light'), local('NotoSans-Light'),
+    url('../fonts/NotoSansKR-Light.eot'),
+    url('../fonts/NotoSansKR-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Light.woff2') format('woff2'),
+    url('../fonts/NotoSansKR-Light.woff') format('woff')
+}
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url('../fonts/NotoSansKR-Regular.eot'),
+    url('../fonts/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSansKR-Regular.woff') format('woff')
+}
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url('../fonts/NotoSansKR-Medium.eot'),
+    url('../fonts/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+    url('../fonts/NotoSansKR-Medium.woff') format('woff')
+}
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url('../fonts/NotoSansKR-Bold.eot'),
+    url('../fonts/NotoSansKR-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+    url('../fonts/NotoSansKR-Bold.woff') format('woff')
+}
+
+/* font family : Noto Serif Korean */
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Serif Regular'), local('NotoSerif-Regular'),
+    url('../fonts/NotoSerifKR-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSerifKR-Regular.woff') format('woff')
+}
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Noto Serif semiBold'), local('NotoSerif-semiBold'),
+    url('../fonts/NotoSerifKR-semiBold.woff2') format('woff2'),
+    url('../fonts/NotoSerifKR-semiBold.woff') format('woff')
+}
