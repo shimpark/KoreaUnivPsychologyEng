@@ -47,7 +47,7 @@
 
 <body>
     <!-- header START -->
-    <header>
+    <header id="mainHd">
         <h1 class="hd-logo"><a href="index.html"><img src="../../content/images/common/logo-header.png"
                     alt="고려대학교 심리학부 로고 이미지"></a></h1>
         <nav class="hd-nav" aria-label="header-navigation">
@@ -57,10 +57,12 @@
                         <a href="aboutPsychology.html" class="hd-nav-menu">ABOUT</a>
                         <ul class="hd-nav-submenu-wrap">
                             <li>
-                                <a href="aboutPsychology.html" class="hd-nav-submenu">심리학 소개</a>
+                                <a href="aboutPsychology.html" class="hd-nav-submenu">Intro to Psychology</a>
                             </li>
                             <li>
-                                <a href="aboutKoreaPsychology.html" class="hd-nav-submenu">고려대학교 심리학부</a>
+                                <a href="aboutKoreaPsychology.html" class="hd-nav-submenu">
+                                    <span class="txt-break__mo">School of Psychology</span>
+                                </a>
                             </li>
                             <li>
                                 <a href="aboutPeople.html" class="efw500 hd-nav-submenu">People</a>
@@ -74,21 +76,23 @@
                         <a href="educationGoal.html" class="hd-nav-menu">EDUCATION</a>
                         <ul class="hd-nav-submenu-wrap">
                             <li>
-                                <a href="educationGoal.html.html" class="hd-nav-submenu">교육목표</a>
+                                <a href="educationGoal.html.html" class="hd-nav-submenu">Objective</a>
                             </li>
-                            <li>
-                                <a href="career.html" class="efw500 hd-nav-submenu">Career</a>
-                            </li>
+                            <!-- <li>
+                                    <a href="career.html" class="efw500 hd-nav-submenu">Career</a>
+                                </li> -->
                         </ul>
                     </li>
                     <li class="hd-nav-item">
                         <a href="researchSubject.html" class="hd-nav-menu">RESEARCH</a>
                         <ul class="hd-nav-submenu-wrap">
                             <li>
-                                <a href="researchSubject.html" class="hd-nav-submenu">연구주제</a>
+                                <!-- 1025 label 수정 -->
+                                <a href="researchSubject.html" class="hd-nav-submenu">Subjects</a>
                             </li>
                             <li>
-                                <a href="researchLab.html" class="hd-nav-submenu">연구소 소개</a>
+                                <!-- 1025 label 수정 -->
+                                <a href="researchLab.html" class="hd-nav-submenu">About the lab</a>
                             </li>
                         </ul>
                     </li>
@@ -98,42 +102,44 @@
                         <ul class="hd-nav-submenu-wrap">
                             <li>
                                 <a href="https://oku.korea.ac.kr/oku/cms/FR_CON/index.do?MENU_ID=770" target="_blank"
-                                    title="새 창 이동" class="hd-nav-submenu">학부<img
+                                    title="새 창 이동" class="hd-nav-submenu">Undergraduate<img
                                         src="../../content/images/common/header-submenu-outlink-ico.png" alt="아웃링크 아이콘"
                                         class="ico"></a>
                             </li>
                             <li>
                                 <a href="https://graduate.korea.ac.kr/grad/matriculate/foreigner.do?_ga=2.195041764.975640527.1605506985-62816748.1605506985"
-                                    target="_blank" title="새 창 이동" class="hd-nav-submenu">대학원<img
+                                    target="_blank" title="새 창 이동" class="hd-nav-submenu">Graduate<img
                                         src="../../content/images/common/header-submenu-outlink-ico.png" alt="아웃링크 아이콘"
                                         class="ico"></a>
                             </li>
                         </ul>
                     </li>
                     <li class="hd-nav-item">
-                        <a href="news.html" class="hd-nav-menu">NEWS&amp;EVENT</a>
+                        <a href="news.html" class="hd-nav-menu">NOTICE</a>
+                        <!-- <a href="news.html" class="hd-nav-menu">NEWS&amp;EVENT</a> -->
                         <ul class="hd-nav-submenu-wrap">
-                            <li>
-                                <a href="news.html" class="efw500 hd-nav-submenu">News</a>
-                            </li>
+                            <!-- <li>
+                                    <a href="news.html" class="efw500 hd-nav-submenu">News</a>
+                                </li> -->
                             <li>
                                 <a href="notice.html" class="efw500 hd-nav-submenu">Notice</a>
                             </li>
-                            <li>
-                                <a href="event.html" class="efw500 hd-nav-submenu">Event</a>
-                            </li>
-                            <li>
-                                <a href="archive.html" class="hd-nav-submenu">자료실</a>
-                            </li>
-                            <li>
-                                <a href="faq.html" class="efw500 hd-nav-submenu hd-nav-submenu__last">FAQ</a>
-                            </li>
+                            <!-- <li>
+                                    <a href="event.html" class="efw500 hd-nav-submenu">Event</a>
+                                </li>
+                                <li>
+                                    <a href="archive.html" class="hd-nav-submenu">Archives</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html" class="efw500 hd-nav-submenu hd-nav-submenu__last">FAQ</a>
+                                </li> -->
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav> <!-- //header nav -->
-        <button class="full-nav-tgl-btn"><span class="bar"></span><span class="txt-hidden">모바일 내비게이션 버튼</span></button>
+        <button class="full-nav-tgl-btn" onclick=""><span class="bar"></span><span class="txt-hidden">모바일 내비게이션
+                버튼</span></button>
     </header>
     <!-- //header START -->
     <!-- about START -->
@@ -334,10 +340,7 @@
                                 <a href="aboutPsychology.html" class="ft-menu__link">Intro to Psychology</a>
                             </li>
                             <li>
-                                <!-- 21 09 01 네이블 수정 Psychology
-                                    Undergraduate program -> School of Psychology -->
-                                <a href="aboutKoreaPsychology.html" class="ft-menu__link">School of
-                                    Psychology</a>
+                                <a href="aboutKoreaPsychology.html" class="ft-menu__link">School of Psychology</a>
                             </li>
                             <li>
                                 <a href="aboutPeople.html" class="ft-menu__link">People</a>
@@ -353,19 +356,21 @@
                             <li>
                                 <a href="educationGoal.html" class="ft-menu__link">Objective</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="career.html" class="ft-menu__link">Career</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li class="ft-menu">
                         <button class="ft-menu__tit">RESEARCH</button>
                         <ul>
                             <li>
-                                <a href="researchSubject.html" class="ft-menu__link">Research areas</a>
+                                <!-- 1025 label 수정 -->
+                                <a href="researchSubject.html" class="ft-menu__link">Subjects</a>
                             </li>
                             <li>
-                                <a href="researchLab.html" class="ft-menu__link">Research center</a>
+                                <!-- 1025 label 수정 -->
+                                <a href="researchLab.html" class="ft-menu__link">About the lab</a>
                             </li>
                         </ul>
                     </li>
@@ -383,9 +388,12 @@
                         </ul>
                     </li>
                     <li class="ft-menu">
-                        <button class="ft-menu__tit">NEWS&amp;EVENT</button>
+                        <button class="ft-menu__tit">NOTICE</button>
                         <ul>
                             <li>
+                                <a href="notice.html" class="ft-menu__link">Notice</a>
+                            </li>
+                            <!-- <li>
                                 <a href="news.html" class="ft-menu__link">News</a>
                             </li>
                             <li>
@@ -396,7 +404,7 @@
                             </li>
                             <li>
                                 <a href="faq.html" class="ft-menu__link">FAQ</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li class="ft-sns-menu">
@@ -421,9 +429,14 @@
                             <span class="ft-info-txt">Korea University</span>
                         </p>
                         <p class="ft-info-txt__row">
-                            <span class="ft-info-txt">02841 Room No 109, Old Building,
+                            <span class="ft-info-txt">
+                                <!-- 1025 label 수정 -->
+                                Old Building Room 109, Korea University Law Building, 145 Anam-ro, Seongbuk-gu, Seoul,<br>
+                                 02841, Republic of Korea 
+                                <!-- 02841 Room No 109, Old Building,
                                 Korea University Law School,<br>
-                                145 Anam-ro, Seongbuk-gu, Seoul</span>
+                                145 Anam-ro, Seongbuk-gu, Seoul -->
+                            </span>
                             <span class="ft-info-txt">Phone No : 02-3290-2060</span>
                         </p>
                         <p class="copyright">

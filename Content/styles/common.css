@@ -297,6 +297,21 @@ header.scrl-active {
     width: 1.25rem;
     vertical-align: middle;
 }
+
+/* 1025 label 수정 추가 */
+.lang-change > a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.lang-change .hd-nav-submenu-wrap {
+    min-width: auto;
+}
+/* //1025 label 수정 추가 */
+
 @media screen and (min-width: 1376px) {
     .hd-nav.active::after {
         content: "";
@@ -364,6 +379,12 @@ header.scrl-active {
         width: 2rem;
         height: 2rem;
     }
+
+    /* 1025 label 수정 추가 */
+    .lang-change a img {
+        width: 40px;
+    }
+    /* //1025 label 수정 추가 */
 }
 /* full navigation
 ============================================================*/
@@ -664,7 +685,7 @@ button
     padding-top: 4rem;
     text-align: center;
 }
-.paging-btn { /* 0601 zoe 수정 */
+.paging-btn { 
     display: inline-block;
     padding: 1rem 2rem;
     margin: 0 0.5rem;
