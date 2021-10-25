@@ -6,11 +6,13 @@
     -webkit-animation-duration: .75s;
     animation-duration: .75s;
 }
+
 .ani-txt,
 .ani-txt__el {
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
 }
+
 .research-article {
     padding: 5rem 0;
 }
@@ -24,28 +26,34 @@
     background: url('../images/research/subject-list-bg-img.jpg') no-repeat center bottom;
     background-size: cover;
 }
+
 .subt-list-hd {
     padding-top: 2rem;
     text-align: center;
 }
+
 .subt-list-hd .ani-txt,
 .subt-list-hd .ani-txt__el {
     -wekbit-animation-delay: .5s;
     animation-delay: .5s;
 }
+
 .subt-list-hd-tit {
     font-size: 2.1rem;
     line-height: 1.4;
 }
+
 .subt-list-hd-tit small {
     display: block;
     font-size: 1.6rem;
 }
+
 .subt-list-hd-tit mark {
     position: relative;
     display: inline-block;
     background-color: transparent;
 }
+
 .subt-list-hd-tit mark::after {
     content: "";
     position: absolute;
@@ -55,29 +63,35 @@
     height: 1rem;
     background-color: #fff;
 }
+
 .subt-list-hd-tit mark span {
     position: relative;
     z-index: 1;
 }
+
 .subt-list-wrap {
     position: relative;
     padding: 14rem 2.25rem 2rem;
     height: 25rem;
 }
+
 .subt-list {
     position: absolute;
     bottom: 2rem;
     left: 0;
     width: 100%;
 }
+
 .subt-list-item {
     margin-top: 1.5rem;
     margin-right: 1.875%;
     width: 18.5%;
 }
+
 .subt-list-item:last-child {
     margin-right: 0;
 }
+
 .subt-list-link {
     overflow: hidden;
     display: block;
@@ -88,11 +102,20 @@
     border-top: 3px solid #760023;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
+
+.subt-list-link.eng {
+    /* 21 09 13 네이블 수정 */
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    height: 10rem;
+}
+
 .subt-list-idx {
     position: relative;
     display: inline-block;
     padding-bottom: 1.5rem;
 }
+
 .subt-list-idx::after {
     content: "";
     position: absolute;
@@ -104,6 +127,7 @@
     height: 0.5rem;
     background-color: #666;
 }
+
 .subt-list-btn {
     display: inline-block;
     padding: 8px 1rem;
@@ -120,56 +144,73 @@
         -webkit-transition: height .25s, color .25s, background-color .25s;
         transition: height .25s, color .25s, background-color .25s;
     }
+
     .subt-list-link:hover {
         height: 10rem;
         color: #fff;
         background-color: #760023;
     }
+
+    .subt-list-link.eng:hover {
+        height: 12rem;
+    }
+
     .subt-list-link:hover .subt-list-idx {
         color: #fff !important;
     }
+
     .subt-list-link:hover .subt-list-idx::after {
         background-color: #fff;
     }
+
     .subt-list-link:hover .subt-list-btn {
         opacity: 1;
     }
 }
+
 @media screen and (max-width: 575.98px) {
     .subt-list-wrap {
         padding: 3rem 0 0;
         height: auto;
     }
+
     .subt-list-hd {
         padding-top: 0;
     }
+
     .subt-list {
         position: relative;
         bottom: auto;
         left: auto;
     }
+
     .subt-list-item {
         margin-right: 0;
         width: 100%;
     }
+
     .subt-list-link {
         position: relative;
         padding: 2.5rem 2rem;
         height: auto;
         text-align: left;
     }
+
     .subt-list-idx {
         padding-right: 1.5rem;
         padding-bottom: 0;
         vertical-align: middle;
     }
+
     .subt-list-idx::after {
         display: none;
     }
+
     .subt-list-tit {
         display: inline-block;
         vertical-align: middle;
     }
+
     .subt-list-btn {
         position: absolute;
         top: 50%;
@@ -182,24 +223,37 @@
         background-color: #760023;
         opacity: 1;
     }
+
+    .subt-list-link.eng {
+        /* 21 09 13 네이블 수정 */
+        padding-right: 2rem;
+        padding-left: 2rem;
+        height: 12rem;
+    }
+
 }
+
 /* 상세 보기 화면
 ============================================================*/
 .subt-view-hd {
     text-align: center;
 }
+
 .subt-view-hd figure {
     position: relative;
     height: 18rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../images/research/subject-view-hd-bg.png'); /* 이미지가 관리자에서 등록된다면 인라인으로 변경 */
+    background-image: url('../images/research/subject-view-hd-bg.png');
+    /* 이미지가 관리자에서 등록된다면 인라인으로 변경 */
 }
+
 .subt-hd-view-info {
     -webkit-animation-delay: .35s !important;
     animation-delay: .35s !important;
 }
+
 .subt-view-hd-tit {
     position: absolute;
     top: 50%;
@@ -211,6 +265,7 @@
     font-size: 2.1rem;
     color: #fff;
 }
+
 .subt-hd-view-info {
     position: relative;
     padding: 3.5rem 1rem 2.5rem;
@@ -218,15 +273,18 @@
     max-width: 43.5rem;
     background-color: #fff;
 }
+
 .subt-hd-view-info__txt {
     padding-top: 1.25rem;
     color: #666;
 }
+
 .subt-view-cont {
     position: relative;
     padding-top: 6rem;
     margin-top: 5rem;
 }
+
 .subt-view-cont::before {
     content: "";
     position: absolute;
@@ -240,20 +298,25 @@
     -webkit-transition: height .35s ease;
     transition: height .35s ease;
 }
+
 .scrl-active.subt-view-cont::before {
     height: 6rem;
 }
+
 .subt-view-list-item {
     padding-top: 2rem;
 }
+
 .subt-view-list-link {
     padding: 2.5rem 3.5rem;
     border: 1px solid #eaeaea;
 }
+
 .subt-view-list-thumb {
     width: 6rem;
     text-align: center;
 }
+
 .subt-view-list-thumb__img {
     overflow: hidden;
     width: 6rem;
@@ -262,6 +325,7 @@
     background-size: 100%;
     border-radius: 100%;
 }
+
 .subt-view-list-thumb__btn {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -271,14 +335,17 @@
     border: 1px solid #a3bbc2;
     border-radius: 2rem;
 }
+
 .subt-view-list-info {
     padding-left: 1.5rem;
     width: calc(100% - 6rem);
 }
+
 .subt-view-list-info dd {
     padding-top: 1rem;
     color: #666;
 }
+
 .subt-view-list-info dd small {
     display: block;
     padding-top: 0.5rem;
@@ -292,55 +359,68 @@
         -webkit-transition: transform .35s ease, box-shadow .35s ease;
         transition: transform .35s ease, box-shadow .35s ease;
     }
+
     .subt-view-list-thumb__btn {
         -webkit-transition: color .35s, background-color .35s;
         transition: color .35s, background-color .35s;
     }
+
     .subt-view-list-link:hover {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
         box-shadow: 0 5px 0 #f7f7f7;
     }
+
     .subt-view-list-link:hover .subt-view-list-thumb__btn {
         color: #fff;
         background-color: #a3bbc2;
     }
 }
+
 @media screen and (max-width: 575.98px) {
     .subt-view-hd-tit {
         font-size: 2.6rem;
     }
+
     .subt-hd-view-info {
         margin: 0 auto;
     }
+
     .subt-view-cont {
         margin-top: 0;
     }
+
     .subt-view-list-link {
         padding: 3.5rem 2rem;
         box-shadow: 0 5px 0 #f7f7f7;
     }
+
     .subt-view-list-thumb,
     .subt-view-list-info {
         width: 100%;
     }
+
     .subt-view-list-thumb {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .subt-view-list-thumb__img {
         width: 8rem;
         height: 8rem;
     }
+
     .subt-view-list-thumb__btn {
         padding: 0.75rem 1.5rem;
         margin: 0;
     }
+
     .subt-view-list-info {
         padding-top: 2rem;
         padding-left: 0;
     }
+
     .subt-view-list-info dd small {
         padding-top: 1rem;
         font-size: 1.1rem;
@@ -354,6 +434,7 @@
     position: relative;
     padding-left: 3.5rem;
 }
+
 [class*="lab-cont__"] dd {
     position: relative;
     padding-top: 2.5rem;
@@ -361,6 +442,7 @@
     line-height: 1.7;
     color: #666;
 }
+
 [class*="lab-cont__"] dd::before {
     content: "";
     position: absolute;
@@ -369,50 +451,63 @@
     height: 1px;
     background-color: #000;
 }
-[class*="lab-cont__"] dd p + p {
+
+[class*="lab-cont__"] dd p+p {
     padding-top: 0.5rem;
 }
+
 [class*="lab-cont__"] dd small {
     color: #999;
 }
+
 [class*="lab-cont__"] .ani-fadein__up {
     -webkit-animation-delay: .35s;
     animation-delay: .35s;
 }
+
 .lab-cont-tit {
     display: block;
     padding-top: 2rem;
 }
+
 .lab-cont-info {
     padding-top: 1rem;
     color: #a3bbc2;
 }
+
 .lab-cont__row dd::before {
     left: 0;
 }
+
 .lab-cont__col dt {
     width: 35%;
 }
+
 .lab-cont__col dd {
     padding-left: 3.5rem;
     width: 65%;
 }
+
 .lab-cont__col dd::before {
     left: 3.5rem;
 }
+
 #labKirbs dd {
     margin-top: 11.5rem;
 }
+
 #labPsybsr {
     padding-top: 15rem;
     margin-top: -7.5rem;
     background: url('../images/research/lab-psybsr-bg-img.jpg') no-repeat center;
     background-attachment: fixed;
 }
+
 #labKumh dl {
     padding-top: 2.5rem;
     padding-left: calc(40% + 3.5rem);
 }
+
 #labKumh figure {
     position: absolute;
     top: 0;
@@ -425,35 +520,44 @@
         border-bottom: 1px solid #a3bbc2;
     }
 }
+
 @media screen and (max-width: 991.98px) {
     #labPsybsr {
         background-position: center right 35%;
     }
 }
-@media screen and (max-width: 575.98px) { 
+
+@media screen and (max-width: 575.98px) {
     [class*="lab-cont__"] {
         padding-left: 0;
     }
+
     .lab-cont__col dt {
         width: 100%;
     }
+
     .lab-cont__col dd {
         padding-left: 0;
         width: 100%;
     }
+
     .lab-cont__col dd::before {
         left: 0;
     }
+
     #labKirbs dd {
         margin-top: 3.5rem;
     }
+
     #labPsybsr {
         background: url('../images/research/lab-psybsr-bg-mo-img.jpg') no-repeat top right;
     }
+
     #labKumh dl {
         padding-top: 0;
         padding-left: 0;
     }
+
     #labKumh figure {
         position: relative;
         top: auto;
