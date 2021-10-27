@@ -7,7 +7,8 @@
     position: relative;
     padding-top: 11rem;
 }
-.psy-story-wrap + .psy-story-wrap:before {
+
+.psy-story-wrap+.psy-story-wrap:before {
     content: "";
     position: absolute;
     top: 2.5rem;
@@ -20,18 +21,22 @@
     -webkit-transition: height .35s ease;
     transition: height .35s ease;
 }
-.psy-story-wrap + .psy-story-wrap.scrl-active::before {
+
+.psy-story-wrap+.psy-story-wrap.scrl-active::before {
     height: 6rem;
 }
+
 .psy-story-wrap .ani-fadein__up,
 .psy-story-wrap .ani-txt,
 .psy-story-wrap .ani-txt__el {
     -webkit-animation-delay: .35s;
     animation-delay: .35s;
 }
+
 .psy-story-wrap dd {
     padding-top: 1rem;
 }
+
 .psy-interview {
     position: relative;
     padding-top: 4rem;
@@ -42,14 +47,17 @@
     -webkit-animation-delay: .5s !important;
     animation-delay: .5s !important;
 }
+
 .psy-interview dt {
     color: #760023;
 }
+
 .psy-interview small {
     display: block;
     padding-top: 1rem;
     color: #666;
 }
+
 .psy-meaning figure {
     width: 46.35%;
     font-size: 0;
@@ -57,13 +65,16 @@
     -webkit-animation-duration: .75s;
     animation-duration: .75s;
 }
+
 .psy-meaning dl {
     padding-left: 3.5rem;
     width: 53.65%;
 }
+
 .psy-talent {
     text-align: center;
 }
+
 .psy-talent__tree {
     position: absolute;
     bottom: -1.5rem;
@@ -76,6 +87,7 @@
     font-weight: 400;
     text-align: center;
 }
+
 .psy-edu-item {
     position: relative;
     padding: 2.5rem 1.8rem;
@@ -86,16 +98,19 @@
     border-top: 4px solid #760023;
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
 }
+
 .psy-edu-item:nth-child(3n),
 .psy-edu-item:last-child {
     margin-right: 0;
 }
+
 .psy-edu-item:last-child {
     padding: 5rem 0 0;
     background-color: transparent;
     border-top: none;
     box-shadow: none;
 }
+
 .psy-edu-ico {
     position: absolute;
     top: 1.75rem;
@@ -104,6 +119,7 @@
     max-width: initial;
     height: 2.5rem;
 }
+
 .psy-edu-item strong {
     display: block;
     position: relative;
@@ -111,6 +127,7 @@
     margin-bottom: 1.5rem;
     color: #760023;
 }
+
 .psy-edu-item strong::after {
     content: "";
     position: absolute;
@@ -124,14 +141,17 @@
 .psy-ctg-tit {
     text-align: center;
 }
+
 .psy-ctg-tab-list {
     padding-top: 3rem;
     -webkit-animation-delay: .25s;
     animation-delay: .25s;
 }
+
 .psy-ctg-tab-list li {
     flex: 1;
 }
+
 .psy-ctg-tab {
     display: block;
     position: relative;
@@ -144,6 +164,7 @@
     -webkit-transition: color .25s ease, border-color .25s ease;
     transition: color .25s ease, border-color .25s ease;
 }
+
 .psy-ctg-tab::before {
     content: "";
     position: absolute;
@@ -155,31 +176,39 @@
     height: 0.5rem;
     border-radius: 100%;
 }
+
 .psy-ctg-tab[data-psyctg="psy-ctg__mind"]::before {
     background-color: #dfe5ec;
 }
+
 .psy-ctg-tab[data-psyctg="psy-ctg__schema"]::before {
     background-color: #e7e0d8;
 }
+
 .psy-ctg-tab[data-psyctg="psy-ctg__creat"]::before {
     background-color: #ede5e8;
 }
+
 .psy-ctg-tab[data-psyctg="psy-ctg__wisdom"]::before {
     background-color: #e7d2c4;
 }
+
 .psy-ctg-tab[data-psyctg="psy-ctg__leader"]::before {
     background-color: #ced2d0;
 }
+
 .psy-ctg-tab:hover,
 .psy-ctg-tab.active {
     color: #760023;
     border-color: #760023;
 }
+
 .psy-ctg-tag-wrap {
     padding: 2.5rem 0 1rem;
     -webkit-animation-delay: .25s;
     animation-delay: .25s;
 }
+
 .psy-ctg-tag {
     display: inline-block;
     padding: 1rem 1.5rem;
@@ -200,30 +229,37 @@
     width: 38%;
     text-align: right;
 }
+
 .psy-faculty-desc__box {
     display: inline-block;
     text-align: left;
 }
+
 .psy-faculty-desc h3 {
     padding-top: 0.5rem;
 }
+
 .psy-faculty-slide {
     width: 62%;
     -webkit-animation-delay: .25s;
     animation-delay: .25s;
 }
+
 .psy-faculty-slide-wrap {
     position: relative;
     padding: 2.25rem 8rem 2.25rem 3rem;
     width: 100%;
     background-color: #e7e0d8;
 }
+
 .psy-faculty-slide .swiper-wrapper {
     align-items: center;
 }
+
 .psy-faculty-slide .swiper-slide {
     width: 20%;
 }
+
 .psy-faculty-link {
     display: block;
     position: relative;
@@ -234,6 +270,7 @@
     line-height: 1.25rem;
     color: #760023;
 }
+
 .psy-faculty-link::before {
     content: "";
     position: absolute;
@@ -245,12 +282,21 @@
     height: 0.5rem;
     background-color: #a19c97;
 }
+
+.swiper-wrapper.eng .psy-faculty-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+
 .psy-faculty-logo {
     display: none;
     width: auto;
     max-width: initial;
     height: 1.25rem;
 }
+
 /* .psy-faculty-link:hover {
     font-size: 0;
 }
@@ -267,28 +313,34 @@
     background-color: #d0cac3;
     border-radius: 100%;
 }
+
 #psyFacultySwiperPrev {
     left: -1.2rem;
     background-image: url('../images/about/psychology-faculty-prev-arw.png');
 }
+
 #psyFacultySwiperNext {
     right: 5rem;
     background-image: url('../images/about/psychology-faculty-next-arw.png');
 }
+
 #psyFacultySwiperPrev:after,
 #psyFacultySwiperNext:after {
     display: none;
 }
+
 .psy-faculty-slide-el {
     position: relative;
     padding: 2.25rem 0 2.5rem 4rem;
 }
+
 .psy-faculty-slide-count {
     position: absolute;
     top: 1.75rem;
     left: 0;
     font-size: 1rem;
 }
+
 #psyFacultySwiperPaging {
     top: 2.25rem;
     left: auto;
@@ -297,11 +349,13 @@
     height: 1px;
     background-color: #000;
 }
+
 #psyFacultySwiperPaging .swiper-pagination-progressbar-fill {
     margin-top: -2.5px;
     height: 5px;
     background-color: #760023;
 }
+
 .psy-faculty-slide-el p {
     padding-top: 1.5rem;
     font-size: 0.8rem;
@@ -312,103 +366,130 @@
     .psy-faculty-slide-wrap {
         padding: 2.25rem 5rem 2.25rem 3rem;
     }
+
     .psy-faculty-slide .swiper-slide {
         width: 33.33%;
     }
+
     #psyFacultySwiperNext {
         right: 15px;
     }
 }
+
 @media screen and (max-width: 991.98px) {
     .psy-story-wrap {
         overflow: hidden;
     }
+
     .psy-talent {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .psy-ctg-tag-wrap {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 }
+
 @media screen and (max-width: 576.98px) {
     .psy-interview {
         margin-top: 0;
     }
+
     .psy-meaning figure {
         width: 100%;
     }
+
     .psy-meaning dl {
         padding: 2.5rem 15px 0;
         width: 100%;
     }
+
     .psy-talent__tree {
         width: 70%;
     }
+
     .psy-edu-item {
         margin-right: 0;
         width: 100%;
     }
+
     .psy-edu-item:last-child {
         padding-top: 3rem;
     }
+
     .psy-edu-ico {
         top: 2rem;
         height: 4rem;
     }
+
     .psy-ctg-tab-list li {
         flex: initial;
         width: 50%;
     }
+
     .psy-ctg-tab {
         margin-top: 1.25rem;
         font-size: 1.3rem;
     }
+
     .psy-ctg-tag-wrap {
         padding-top: 3.5rem;
     }
+
     .psy-ctg-tag {
         padding: 1.5rem;
         font-size: 1.4rem;
     }
+
     .psy-faculty-desc {
         padding-right: 15px;
         width: 100%;
         text-align: left;
     }
+
     .psy-faculty-slide {
         padding-top: 3.5rem;
         width: 100%;
     }
+
     .psy-faculty-slide-wrap {
         padding: 3rem;
     }
+
     .psy-faculty-slide .swiper-slide {
         width: 100%;
     }
+
     .psy-faculty-link {
         font-size: 1.4rem;
     }
+
     #psyFacultySwiperPrev,
     #psyFacultySwiperNext {
         top: 55%;
         width: 3rem;
         height: 3rem;
     }
+
     #psyFacultySwiperPrev {
         left: 15px;
     }
+
     .psy-faculty-slide-el {
         padding: 2.25rem 15px 0;
     }
+
     .psy-faculty-slide-count {
         display: none;
     }
+
     #psyFacultySwiperPaging {
         top: 0;
         width: 100%;
     }
+
     .psy-faculty-slide-el p {
         padding-top: 0;
         font-size: 1.3rem;
@@ -419,24 +500,28 @@
 /*============================================================
 고려대학교 심리학부
 ============================================================*/
-.psy-univ-story  {
+.psy-univ-story {
     overflow-x: hidden;
 }
+
 .psy-univ-story dt {
     position: relative;
     padding: 3rem 0 9rem;
 }
+
 .psy-univ-story .ani-txt,
 .psy-univ-story .ani-txt__el {
     -webkit-animation-delay: .35s;
     animation-delay: .35s;
 }
+
 .psy-univ-story .bg-img {
     position: absolute;
     top: -7%;
     right: -7%;
     width: 61.11%;
 }
+
 .psy-univ-story strong {
     display: block;
     font-weight: 500;
@@ -444,15 +529,18 @@
     line-height: 1.25;
     color: #760023;
 }
+
 .psy-univ-story dd {
     text-align: center;
     -webkit-animation-delay: .7s !important;
     animation-delay: .7s !important;
 }
+
 .psy-univ-data {
     position: relative;
     padding-top: 6rem;
 }
+
 .psy-univ-data::before {
     content: "";
     position: absolute;
@@ -467,24 +555,29 @@
     transition: height .35s ease;
     z-index: 1;
 }
+
 .psy-univ-data.scrl-active::before {
     height: 6rem;
 }
+
 .psy-univ-graph-wrap {
     position: relative;
     padding: 4rem 2.5rem 3.5rem;
     text-align: center;
     background-color: #e9edf2;
 }
+
 .psy-univ-graph-year {
     display: block;
     color: #999;
 }
+
 .psy-univ-graph-el-box {
     position: absolute;
     top: 2rem;
     right: 1.5rem;
 }
+
 [class^="psy-univ-graph-el__"] {
     position: relative;
     padding: 0.5rem 0 0.5rem 1rem;
@@ -495,36 +588,44 @@
     background-position: center left;
     background-size: 0.75rem;
 }
+
 .psy-univ-graph-el__korea {
     color: #760023;
     background-image: url('../images/about/psychology-univ-graph-el-ico-korea.png');
 }
+
 .psy-univ-graph-el__a {
     color: #666;
     background-image: url('../images/about/psychology-univ-graph-el-ico-a.png');
 }
+
 .psy-univ-graph-el__b {
     color: #999;
     background-image: url('../images/about/psychology-univ-graph-el-ico-b.png');
 }
+
 .psy-univ-graph-item {
     margin-top: 2.5rem;
     margin-right: 4.6%;
     width: 21.5%;
 }
+
 .psy-univ-graph-item:last-child {
     margin-right: 0;
 }
+
 .psy-univ-graph-box {
     min-height: 11.5rem;
     background: url('../images/about/psychology-univ-graph-bg-01.png') no-repeat center bottom;
     border-bottom: 2px solid #babec2;
 }
+
 [class^="psy-univ-graph__"] {
     position: relative;
     margin: 0 0.75rem;
     text-align: center;
 }
+
 [class^="psy-univ-graph__"] .num {
     display: inline-block;
     padding-bottom: 5px;
@@ -534,116 +635,147 @@
     transform: translateX(-50%);
     font-size: 0.8rem;
 }
+
 [class^="psy-univ-graph__"] .bar {
     background-size: cover;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
+
 [class^="psy-univ-graph__korea"] {
     width: 17.4%;
     color: #760023;
 }
+
 [class^="psy-univ-graph__korea"] .num {
     font-size: 1.2rem;
 }
+
 [class^="psy-univ-graph__korea"] .bar {
     height: 0;
     background: url('../images/about/psychology-univ-graph-pattern-korea.png') repeat center top;
     -webkit-transition: height .75s .5s ease;
     transition: height .75s .5s ease;
 }
+
 [class^="psy-univ-graph__a"] {
     width: 8.7%;
     color: #666;
 }
+
 [class^="psy-univ-graph__a"] .bar {
     background: url('../images/about/psychology-univ-graph-pattern-a.png') repeat center top;
 }
+
 [class^="psy-univ-graph__b"] {
     width: 8.7%;
     color: #999;
 }
+
 [class^="psy-univ-graph__b"] .bar {
     background: url('../images/about/psychology-univ-graph-pattern-b.png') repeat center top;
 }
+
 .scrl-active .psy-univ-graph__korea-01 .bar {
     height: 7.75rem;
 }
+
 .scrl-active .psy-univ-graph__korea-02 .bar {
     height: 8.25rem;
 }
+
 .scrl-active .psy-univ-graph__korea-03 .bar {
     height: 7.5rem;
 }
+
 .scrl-active .psy-univ-graph__korea-04 .bar {
     height: 9rem;
 }
+
 .psy-univ-graph__a-01 .bar {
     height: 6rem;
 }
+
 .psy-univ-graph__a-02 .bar {
     height: 6rem;
 }
+
 .psy-univ-graph__a-03 .bar {
     height: 6rem;
 }
+
 .psy-univ-graph__a-04 .bar {
     height: 9rem;
 }
+
 .psy-univ-graph__b-01 .bar {
     height: 5rem;
 }
+
 .psy-univ-graph__b-02 .bar {
     height: 5rem;
 }
+
 .psy-univ-graph__b-03 .bar {
     height: 9.75rem;
 }
+
 .psy-univ-graph__b-04 .bar {
     height: 7rem;
 }
+
 .psy-univ-graph-tit {
     display: block;
     padding-top: 1.25rem;
     height: 4rem;
 }
+
 .psy-univ-table-wrap {
     padding: 3.5rem 5rem;
     margin-top: 1rem;
     background-color: #eee9e4;
 }
+
 .psy-univ-table {
     table-layout: fixed;
     width: 100%;
     text-align: center;
 }
+
 .psy-univ-table-th {
     padding-bottom: 1rem;
     width: 16%;
 }
+
 .psy-univ-table-th__first {
     width: 25%;
 }
+
 .psy-univ-table-th__last {
     width: 11%;
 }
+
 [class*="psy-univ-table-td"] {
     padding-bottom: 0.5rem;
     vertical-align: top;
 }
+
 [class*="psy-univ-table-td"] .txt {
     display: block;
     line-height: 3.5rem;
     background-color: #fff;
 }
+
 .psy-univ-table-td {
     color: #929ca3;
 }
+
 .psy-univ-table-td__tit {
     position: relative;
     line-height: 1;
 }
+
 .psy-univ-table-td__tit::after {
     content: "";
     position: absolute;
@@ -656,15 +788,21 @@
     background-color: #ccc;
 }
 
-/* 0601 zoe 추가 시작 */
+.psy-univ-table-td__tit.eng::after {
+    width: 1rem;
+    right: -10%;
+}
+
 .psy-univ-about dl {
     padding-top: 4rem;
 }
+
 .psy-univ-about dt {
     position: relative;
     width: 9.5rem;
     line-height: 1;
 }
+
 .psy-univ-about dt::after {
     content: "";
     display: block;
@@ -675,18 +813,28 @@
     height: 1px;
     background-color: #000;
 }
+
+/* 1027 label 수정 추가 */
+.psy-univ-about dt.eng {
+    line-height: initial;
+}
+/* //1027 label 수정 추가 */
+
 .psy-univ-about dd {
     width: calc(100% - 9.5rem);
     -webkit-animation-delay: .35s !important;
     animation-delay: .35s !important;
 }
+
 .psy-univ-symbol {
     border: 1px solid #e0e0e0;
 }
+
 .psy-univ-symbol-item {
     position: relative;
     padding: 4.5rem 3rem 2.5rem 4rem;
 }
+
 .psy-univ-symbol-label {
     position: absolute;
     top: 0;
@@ -698,21 +846,26 @@
     color: #fff;
     background-color: #b6c6d9;
 }
+
 .psy-univ-symbol-detail-logo {
     display: block;
     width: 5.5rem;
 }
+
 .psy-univ-symbol-detail-cont {
     padding-left: 2.5rem;
     width: calc(100% - 5.5rem);
 }
+
 .psy-univ-symbol-detail-cont h4 {
     padding-bottom: 0.5rem;
 }
+
 .psy-univ-symbol-detail-cont p {
     padding-left: 0.75rem;
     margin-top: 0.5rem;
 }
+
 .psy-univ-symbol-detail-cont p::after {
     top: 10px;
     left: 0;
@@ -721,33 +874,38 @@
     background-color: #000;
     border-radius: 100%;
 }
+
 .psy-univ-color li {
     width: 49%;
 }
+
 .psy-univ-color-code {
     padding: 1.5rem;
     line-height: 1;
     color: #fff;
 }
+
 .psy-univ-about .paging-btn-wrap {
     margin-top: 4rem;
     border-top: 1px solid #ccc;
 }
+
 .psy-univ-about .paging-btn {
     width: 13.5rem;
 }
-/* 0601 zoe 추가 끝 */
 
 @media screen and (max-width: 575.98px) {
     .psy-univ-story dt {
         padding: 0 0 16rem;
     }
+
     .psy-univ-story .bg-img {
         top: auto;
         bottom: 4rem;
         right: -7%;
         width: 80%;
     }
+
     .psy-univ-graph-el-box {
         justify-content: center;
         position: relative;
@@ -755,66 +913,88 @@
         right: auto;
         padding-top: 1rem;
     }
+
     [class^="psy-univ-graph-el__"] {
         font-size: 1.1rem;
     }
+
     .psy-univ-graph-item {
         margin-right: 4%;
         width: 48%;
     }
+
     .psy-univ-graph-item:nth-child(2) {
         margin-right: 0;
     }
+
     .psy-univ-table-wrap {
         padding: 3.5rem 2rem;
     }
+
+    .psy-univ-table-td__tit.eng span.txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.5rem;
+        line-height: 1;
+    }
+
     .psy-univ-table-td__tit::after {
         display: none;
     }
+
     .psy-univ-table-th__last,
     .psy-univ-table-td__last {
         display: none;
     }
-    /* 0601 zoe 추가 시작 */
+
     .psy-univ-about dt {
         width: 100%;
     }
+
     .psy-univ-about dt::after {
         display: none;
     }
+
     .psy-univ-about dd {
         padding-top: 2rem;
         width: 100%;
     }
+
     .psy-univ-symbol-item {
         padding: 6rem 2rem 3rem;
     }
+
     .psy-univ-symbol-label {
         padding: 1rem 0;
         width: 100%;
     }
+
     .psy-univ-symbol-detail {
         display: block;
     }
+
     .psy-univ-symbol-detail-logo {
         margin: 0 auto;
     }
+
     .psy-univ-symbol-detail-cont {
         padding-top: 2rem;
         padding-left: 0;
         width: 100%;
     }
+
     .psy-univ-color li {
         margin: 0.5rem 0;
         width: 100%;
     }
+
     .psy-univ-about .paging-btn {
         padding-left: 0;
         padding-right: 0;
         margin: 0 5px;
         width: 12.5rem;
     }
-    /* 0601 zoe 추가 끝 */
 }
 
 /*============================================================
@@ -824,6 +1004,7 @@ People
     position: relative;
     padding-top: 10rem;
 }
+
 [class^="people-cont-wrap__"]::before {
     content: "";
     position: absolute;
@@ -836,15 +1017,19 @@ People
     -webkit-transition: height .5s ease;
     transition: height .5s ease;
 }
-[class^="people-cont-wrap__"].scrl-active::before  {
+
+[class^="people-cont-wrap__"].scrl-active::before {
     height: 6rem;
 }
+
 .people-cont__lt {
     width: 13rem;
 }
+
 .people-cont__rt {
     width: calc(100% - 13rem);
 }
+
 .people-anchor-menu.scrl-active {
     position: fixed;
     top: 4.5rem;
@@ -852,9 +1037,11 @@ People
     -webkit-transform: translateX(-585px);
     transform: translateX(-585px);
 }
+
 .people-anchor-menu li {
     padding: 1rem 0;
 }
+
 .people-anchor-btn {
     position: relative;
     display: inline-block;
@@ -862,33 +1049,42 @@ People
     color: #666;
     background-color: transparent;
 }
+
 .people-anchor-btn.active {
     font-weight: 700;
     color: #760023;
 }
+
 /* 교수진 리스트
 ============================================================*/
 .people-hd__list h3 {
     text-align: center;
 }
+
 .people-cont-wrap__list::before {
     left: 50%;
 }
+
 .people-cont-wrap__list .people-anchor-menu {
     padding-top: 4rem;
 }
+
 .people-list {
     padding: 1.5rem 0;
 }
+
 .people-list:first-child {
     padding-top: 0;
 }
-.people-list + .people-list {
+
+.people-list+.people-list {
     border-top: 1px solid #e5e5e5;
 }
+
 .people-list-item {
     padding: 1.5rem 0;
 }
+
 [class*="people-list-thumb__"] {
     overflow: hidden;
     width: 10rem;
@@ -899,19 +1095,24 @@ People
     background-image: url('../images/about/people-list-thumb-bg.png');
     border-radius: 100%;
 }
+
 .people-list-thumb__prof {
     background-color: #d4d4d4;
 }
+
 .people-list-thumb__honorprof {
     background-color: #e1cccf;
 }
+
 .people-list-thumb__staff {
     background-color: #dfe5ec;
 }
+
 .people-list-info {
     padding-left: 2rem;
     width: calc(100% - 10rem);
 }
+
 .people-list-info__ctg {
     display: inline-block;
     padding: 0.5rem 0.75rem;
@@ -921,20 +1122,24 @@ People
     border: 1px solid #a3bbc2;
     border-radius: 1px;
 }
+
 .people-list-info__name {
     padding-top: 1rem;
     line-height: 1;
 }
+
 .people-list-info dd {
     padding-top: 1.25rem;
     color: #888;
 }
+
 .people-list-info__research_label {
     display: inline-block;
     padding-bottom: 0.75rem;
     line-height: 1;
     color: #666;
 }
+
 /* 교수진 상세 소개
 ============================================================*/
 .people-hd__view {
@@ -942,6 +1147,7 @@ People
     padding-left: 13rem;
     padding-right: 4.5rem;
 }
+
 [class^="people-view-arw__"] {
     display: inline-block;
     position: absolute;
@@ -950,66 +1156,91 @@ People
     transform: translateY(-50%);
     width: 2.25rem;
 }
+
 .people-view-arw__prev {
     left: 0;
 }
+
 .people-view-arw__next {
     right: 0;
 }
+
 .people-cont-wrap__view::before {
     left: 31%;
 }
+
 .people-cont-wrap__view .people-anchor-menu {
     padding-top: 1.5rem;
 }
+
 .people-view {
     padding: 2rem 3.5rem;
     margin-top: 1.25rem;
     background-color: #f7f8f9;
 }
+
 .people-view-tit {
     display: inline-block;
     padding-bottom: 1rem;
     line-height: 1;
     border-bottom: 3px solid #000;
 }
+
 .people-view-info {
     padding-top: 1rem;
     font-weight: 300;
 }
+
 .people-view-info__item {
     padding-top: 0.75rem;
 }
+
 .people-view-info__ctg {
     font-weight: 500;
     width: 4.5rem;
 }
+
 .people-view-info__ctg-txt {
     font-weight: 400;
     width: calc(100% - 4.5rem);
-}   
+}
+
+/* 1027 label 수정 추가 */
+.people-cont-wrap__view.eng .people-anchor-btn {
+    text-align: left;
+    line-height: 1.3;
+    height: 100%;
+    word-break: keep-all;
+}
+
+/* //1027 label 수정 추가 */
 
 @media screen and (min-width: 1200px) {
     .people-list-link {
         -webkit-transition: transform .35s ease;
         transition: transform .35s ease;
     }
+
     .people-list-link:hover {
         -webkit-transform: translateY(-0.5rem);
         transform: translateY(-0.5rem);
     }
+
     .people-view-info__ctg-txt a:hover {
         color: #760023;
     }
 }
+
 @media screen and (min-width: 768px) {
     .people-anchor-btn {
         -webkit-transition: padding-left .15s ease;
         transition: padding-left .15s ease;
     }
+
     .people-anchor-btn.active {
         padding-left: 1.5rem;
     }
+
     .people-anchor-btn.active::before {
         content: "";
         position: absolute;
@@ -1023,6 +1254,7 @@ People
         border-radius: 1rem;
     }
 }
+
 @media screen and (max-width: 1169.98px) {
     .people-anchor-menu.scrl-active {
         left: 15px;
@@ -1030,36 +1262,44 @@ People
         transform: translateX(0);
     }
 }
+
 @media screen and (max-width: 991.98px) {
     .people-hd__view {
         padding: 0 4.5rem;
     }
+
     .people-cont-wrap__view::before {
         left: 50%;
     }
 }
+
 @media screen and (max-width: 576.98px) {
     .people-cont {
         display: block;
         position: relative;
     }
+
     .people-cont__lt {
         width: 100%;
     }
+
     .people-cont__rt {
         padding-left: 0;
         width: 100%;
     }
+
     .people-anchor-menu {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         background-color: #fff;
     }
+
     .people-anchor-menu li {
         flex: 1;
         padding: 0;
     }
+
     .people-anchor-btn {
         display: block;
         padding: 1.5rem 0;
@@ -1068,40 +1308,51 @@ People
         text-align: center;
         border-bottom: 1px solid #ccc;
     }
-    .people-anchor-btn.active{
+
+    .people-anchor-btn.active {
         border-bottom: 3px solid #760023;
     }
+
     .people-anchor-menu.scrl-active {
         left: 0;
         width: 100%;
     }
+
     .people-anchor-menu {
         padding-top: 0 !important;
     }
+
     .people-list:first-child {
         padding-top: 1.5rem;
     }
+
     [class*="people-list-thumb__"] {
         width: 8rem;
         height: 8rem;
     }
+
     .people-list-info {
         padding-left: 2rem;
         width: calc(100% - 8rem);
     }
+
     .people-list-info dd {
         padding-top: 1.5rem;
     }
+
     .people-list-info__research_label {
         font-size: 1.4rem;
     }
+
     .people-cont-wrap__view .people-anchor-menu li {
         flex: none;
         width: 33.33%;
     }
+
     .people-hd__view {
         padding: 4rem 0 0;
     }
+
     [class^="people-view-arw__"] {
         top: -2.5rem;
         -webkit-transform: translateY(0);
@@ -1111,23 +1362,33 @@ People
         text-align: center;
         border: 1px solid #ccc;
     }
+
     [class^="people-view-arw__"] img {
         display: inline-block;
         margin: 0.75rem 0;
         width: 1rem;
     }
+
     .people-view {
         padding: 3.5rem 2rem;
         margin-top: 2rem;
     }
+
     .people-view-info__ctg,
     .people-view-info__ctg-txt {
         width: 100%;
     }
+
     .people-view-info__ctg-txt {
         padding-top: 0.5rem;
         word-break: break-all;
     }
+
+    /* 1027 label 수정 추가 */
+    .people-cont-wrap__view.eng .people-anchor-btn {
+        text-align: center;
+    }
+    /* //1027 label 수정 추가 */
 }
 
 /*============================================================
@@ -1137,16 +1398,19 @@ CONTACT
     padding: 2rem 3rem 3.5rem;
     background-color: #f7f8f9;
 }
+
 .contact-modal-btn {
     display: inline-block;
     margin-left: 1rem;
     border-bottom: 1px solid #760023;
 }
+
 #contactPrivacyModal .modal-wrap__abs {
     padding: 2rem;
     width: 25rem;
     background-color: #760023;
 }
+
 #contactPrivacyModal .close-modal-btn {
     display: inline-block;
     top: 1rem;
@@ -1156,11 +1420,13 @@ CONTACT
     height: 1.5rem;
     background-color: transparent;
 }
+
 #contactPrivacyModal .close-modal-btn::before,
 #contactPrivacyModal .close-modal-btn::after {
     height: 2px;
     background-color: #fff;
 }
+
 #contactPrivacyModal .form-el__txtfield {
     margin-top: 1rem;
     height: 13rem;
@@ -1173,32 +1439,39 @@ CONTACT
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
     .contact-wrap small.pl20 {
         display: block;
         padding-top: 0.5rem;
         padding-left: 0 !important;
     }
+
     .contact-modal-btn {
         padding-bottom: 5px;
         line-height: 1;
     }
+
     #contactPrivacyModal .modal-wrap__abs {
         padding-top: 3.5rem;
         width: calc(100% - 30px);
     }
+
     #contactPrivacyModal .close-modal-btn {
         width: 2.5rem;
         height: 2.5rem;
     }
+
     #contactPrivacyModal .form-el__txtfield {
         padding: 1.5rem;
         margin-top: 1.5rem;
     }
 }
+
 @media screen and (max-width: 360.98px) {
     .contact-wrap .form-chk {
         width: 100%;
     }
+
     .contact-modal-btn {
         margin-top: 0.75rem;
         margin-left: 2.5rem;

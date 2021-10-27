@@ -95,6 +95,17 @@
     text-align: center;
     border-left: 3px solid #760023;
 }
+
+/* 1027 label 수정 추가 */
+.goal-psy-cont.eng .goal-psy-item dt {
+    width: 10rem;
+}
+
+.goal-psy-cont.eng .goal-psy-item dd {
+    width: calc(100% - 10rem);
+}
+/* //1027 label 수정 추가 */
+
 .goal-psy-item:nth-child(odd) dt {
     background-color: #dfe5ec;
 }
@@ -109,6 +120,20 @@
 .goal-psy-item p + p {
     padding-top: 5px;
 }
+
+/* 1027 label 수정 추가 */
+@media screen and (max-width: 575.98px) {
+    .goal-psy-cont.eng .goal-psy-item dt {
+        width: 13rem;
+        word-break: break-all;
+    }
+    
+    .goal-psy-cont.eng .goal-psy-item dd {
+        width: calc(100% - 13rem);
+    }
+}
+/* //1027 label 수정 추가 */
+
 /* 심리학부 교육목표 상세 소개
 ============================================================*/
 .goal-detail-hd {
@@ -160,6 +185,15 @@
     padding: 0.75rem 0 0.5rem;
 }
 
+/* 1027 label 수정 추가 */
+.goal-detail-cont.eng .goal-module-item {
+    padding-bottom: 1rem;
+}
+.goal-detail-cont.eng p.fs18__txt {
+    font-size: 0.8rem;
+}
+/* 1027 label 수정 추가 */
+
 @media screen and (max-width: 575.98px) {
     [class^="goal-inst-item__"] {
         width: 100%;
@@ -192,6 +226,12 @@
         width: 48%;
         border: 2px solid #eaeaea;
         border-radius: 2rem;
+    }
+
+    /* 1027 label 수정 추가 */
+    .goal-detail-cont.eng p.fs18__txt {
+        font-size: 1.3rem;
+        word-break: break-all;
     }
 }
 
